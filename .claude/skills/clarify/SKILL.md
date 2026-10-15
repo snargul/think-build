@@ -20,10 +20,10 @@ An idea in a few sentences, or the name of an existing spec in `specs/`.
    - Give each question 2–4 options. Every question must have exactly one option marked **(recommended)** with a one-line reason, both in chat and in the spec. Never ask a question without one.
    - Show them in chat and also add them under `## Open questions`, each option starting with `- [ ]`, so the user can answer in chat or by ticking a box.
    - Ask product questions first (who, what, edge cases, what's out of scope), then high-impact technical choices (stack, data storage, how it runs).
-5. Turn each answer into a requirement, acceptance criterion or decision. Remove the answered question and add a line to `## Decision log`. Go back to step 3.
+5. Turn each answer into a requirement, acceptance criterion or decision. Write acceptance criteria as steps a user can do and results they can see ("When the user enters two grades and presses Calculate, Then the average is shown"), not as internal behaviour. Remove the answered question and add a line to `## Decision log`. Go back to step 3.
 6. Never fill a gap with your own assumption. If the user says "you decide", take the recommended option and log it as "proposed by AI, accepted by user".
 7. At 90% or more with no open questions: write `## Tasks`, give a short summary and stop with:
-   "Read the spec. If it matches what you want, run /build <short-name>."
+   "Read the spec. If it matches what you want, run /build."
 
 ## Spec structure
 ```markdown
@@ -33,7 +33,7 @@ An idea in a few sentences, or the name of an existing spec in `specs/`.
 ## Goal                 <!-- who it is for and what problem it solves, 2–3 sentences -->
 ## Out of scope         <!-- what we deliberately won't do -->
 ## Requirements         <!-- R1, R2 … one testable sentence each -->
-## Acceptance criteria  <!-- AC1, AC2 … Given / When / Then -->
+## Acceptance criteria  <!-- AC1, AC2 … Given / When / Then, as what a user does and sees -->
 ## Decisions            <!-- important technical choices and why -->
 ## Tasks                <!-- small ordered steps, e.g. - [ ] T1: … (AC1, AC2) -->
 ## Open questions

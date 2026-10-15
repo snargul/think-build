@@ -9,12 +9,13 @@ Implement a spec task by task, prove it with tests, and report honestly.
 The spec is the source of truth. Reply in the user's language.
 
 ## Input
-The spec name, e.g. `habit-tracker` for `specs/habit-tracker.md`.
+Optional: the spec name, e.g. `habit-tracker` for `specs/habit-tracker.md`.
+No name given? Use the spec in `specs/` that still has unticked tasks. If there are several, ask which one; if there are none, suggest `/clarify`.
 
 ## Before you start
 - If the spec doesn't exist, still has open questions, or is below 90% confidence: stop and suggest `/clarify <name>`.
 - Read `PROJECT.md` and the spec. Follow the project's rules and commands.
-- New project? Set up the stack from the spec's Decisions with a working test command, and fill in Stack and Commands in `PROJECT.md`.
+- New project? Set up the stack from the spec's Decisions with one command to run the app and one to run the tests, and write both into Stack and Commands in `PROJECT.md`.
 
 ## For each task, in order
 1. Write tests for the acceptance criteria this task covers. Run them and see them fail.
@@ -31,7 +32,7 @@ The spec name, e.g. `habit-tracker` for `specs/habit-tracker.md`.
 - Stuck on the same failure after 3 attempts? Stop and explain what you tried.
 
 ## Finish
-Run the full test suite, then reply with:
+Run the full test suite. If the app has a user interface and a `clicker` agent is available, ask it to check the spec in a browser and include its results. If the app has a user interface but clicker isn't available, say so in the report. Then reply with:
 1. **Acceptance criteria**: a table with each AC, its status (done / partly / not done) and the evidence (test name or reason).
 2. **How to try it**: the commands to run it, and 2–3 things to click or type to see it work.
 3. **Check these yourself**: 3–5 specific places a human should look, such as assumptions you made, untested edge cases, security-sensitive code, or the parts you're least sure about.
