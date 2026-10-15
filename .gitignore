@@ -2,3 +2,6 @@
 
 # IDE
 .idea/
+
+# Clicker output (screenshots, browser logs)
+.clicker/

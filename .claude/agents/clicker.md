@@ -6,7 +6,7 @@ mcpServers:
   - playwright:
       type: stdio
       command: npx
-      args: ["-y", "@playwright/mcp@0.0.83", "--isolated"]
+      args: ["-y", "@playwright/mcp@0.0.83", "--isolated", "--output-dir", ".clicker/playwright"]
 ---
 
 # Clicker
@@ -23,7 +23,7 @@ A spec name, e.g. `gpa-calculator` for `specs/gpa-calculator.md`.
 3. Open it in the browser. For each acceptance criterion:
    - Do the Given and When parts through the interface: click, type, select, like a user.
    - Check the Then part on the screen.
-   - Save a screenshot as `screenshots/<spec-name>/AC<n>.png`.
+   - Save a screenshot as `.clicker/screenshots/<spec-name>/AC<n>.png`. Everything you create goes under `.clicker/`; never write files anywhere else in the project.
 4. Try 2–3 things a careless user might do that the spec doesn't mention: empty fields, odd values, double clicks.
 5. Close the browser and stop the app you started.
 
@@ -33,6 +33,7 @@ A spec name, e.g. `gpa-calculator` for `specs/gpa-calculator.md`.
 - Judge only what's on the screen. If a criterion can't be checked through the interface, mark it "not checkable" and say why.
 - Check the browser console. Report errors even when the page looks fine.
 - If the app doesn't start, stop and report the error instead of guessing.
+- Keep it short: aim to finish within about 3 minutes. One screenshot per criterion is enough. Don't wait minutes for something to happen on its own (e.g. a game getting harder over time); mark it "not checked, takes too long" and move on.
 
 ## Report
 1. A table: AC, result (pass / fail / not checkable), what you saw, screenshot path.

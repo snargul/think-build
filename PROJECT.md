@@ -3,15 +3,15 @@
      Keep it short. Replace the <...> parts; /build can fill Stack and Commands for a new project. -->
 
 ## Project
-<One or two sentences: what this is and who it's for.>
+Havalimanı Kuş Kaçışı: tarayıcıda oynanan, uçaklardan ve helikopterden kaçan sevimli bir kuş oyunu (spec: `specs/havalimani-kus-oyunu.md`).
 
 ## Stack
-<e.g. Python 3.12, FastAPI, SQLite, pytest>
+Tek dosya HTML + Canvas + saf JavaScript (`src/index.html`), bağımlılık yok. Testler: Node.js 18+ yerleşik test aracı (`node --test`). Oyun kuralları `<script id="game-logic">` bloğunda DOM'suz durur; testler bu bloğu Node'da çalıştırır.
 
 ## Commands
-- Install: `<...>`
-- Run: `<...>`
-- Test: `<...>`
+- Install: gerek yok (yalnızca Node.js 18+)
+- Run: `open src/index.html` (macOS) veya dosyayı tarayıcıda açın
+- Test: `npm test`
 
 ## Rules
 - Reply in the language the user writes in.
