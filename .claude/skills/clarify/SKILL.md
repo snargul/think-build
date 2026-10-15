@@ -7,6 +7,7 @@ description: Turns a rough idea or feature request into a clear, testable spec b
 
 Turn a rough idea into a spec the user agrees with. You ask, the user decides.
 Write no code in this skill. Ask and write in the user's language.
+Never commit, push or create branches/PRs. Leave the spec uncommitted so the user can review it first.
 
 ## Input
 An idea in a few sentences, or the name of an existing spec in `specs/`.

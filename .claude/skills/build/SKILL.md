@@ -25,6 +25,7 @@ The spec name, e.g. `habit-tracker` for `specs/habit-tracker.md`.
 ## Rules
 - If the spec is unclear or looks wrong, stop and ask. Don't change scope silently.
 - Never weaken, skip or delete a test to make it pass.
+- Never commit, push or create branches/PRs, even if the user asks during this skill. Leave all changes uncommitted so the user can review them first.
 - Ask before adding a dependency or doing anything destructive (deleting files, resetting data, force-pushing).
 - No secrets in code. Use environment variables and a `.env.example`.
 - Stuck on the same failure after 3 attempts? Stop and explain what you tried.
