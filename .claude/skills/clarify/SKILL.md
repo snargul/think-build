@@ -13,11 +13,11 @@ Never commit, push or create branches/PRs. Leave the spec uncommitted so the use
 An idea in a few sentences, or the name of an existing spec in `specs/`.
 
 ## Steps
-1. Read `AGENTS.md` if it exists. If the input names an existing spec, read it and continue where it stopped.
+1. Read `PROJECT.md` if it exists. If the input names an existing spec, read it and continue where it stopped.
 2. Create or update `specs/<short-name>.md` using the structure below. Fill in only what the user actually said.
 3. Estimate your confidence (0–100%) that the spec captures what the user wants. Count only what the user said or confirmed, not what you could guess.
 4. Below 90%: ask the 3–5 questions that would raise confidence the most.
-   - Give each question 2–4 options. Mark one **(recommended)** with a one-line reason.
+   - Give each question 2–4 options. Every question must have exactly one option marked **(recommended)** with a one-line reason, both in chat and in the spec. Never ask a question without one.
    - Show them in chat and also add them under `## Open questions`, each option starting with `- [ ]`, so the user can answer in chat or by ticking a box.
    - Ask product questions first (who, what, edge cases, what's out of scope), then high-impact technical choices (stack, data storage, how it runs).
 5. Turn each answer into a requirement, acceptance criterion or decision. Remove the answered question and add a line to `## Decision log`. Go back to step 3.

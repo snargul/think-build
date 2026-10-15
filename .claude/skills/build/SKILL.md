@@ -13,8 +13,8 @@ The spec name, e.g. `habit-tracker` for `specs/habit-tracker.md`.
 
 ## Before you start
 - If the spec doesn't exist, still has open questions, or is below 90% confidence: stop and suggest `/clarify <name>`.
-- Read `AGENTS.md` and the spec. Follow the project's rules and commands.
-- New project? Set up the stack from the spec's Decisions with a working test command, and fill in Stack and Commands in `AGENTS.md`.
+- Read `PROJECT.md` and the spec. Follow the project's rules and commands.
+- New project? Set up the stack from the spec's Decisions with a working test command, and fill in Stack and Commands in `PROJECT.md`.
 
 ## For each task, in order
 1. Write tests for the acceptance criteria this task covers. Run them and see them fail.

@@ -11,13 +11,13 @@ idea → /clarify → specs/<name>.md → you read it → /build → report → 
 
 | File | What it does |
 |---|---|
-| `AGENTS.md` | Tells the agent about your project and your rules. Fill in the `<...>` parts. |
+| `PROJECT.md` | Tells the AI about your project and your rules. Fill in the `<...>` parts. |
 | `.claude/skills/clarify/` | Asks you questions until your idea is a clear spec. Doesn't guess. |
 | `.claude/skills/build/` | Builds the spec test-first, then reports what's done and what isn't. |
 
 ## Start in 3 steps
 
-1. **New project:** click **Use this template** on GitHub. **Existing project:** copy `AGENTS.md` and the `.claude/` folder into its root.
+1. **New project:** click **Use this template** on GitHub. **Existing project:** copy `PROJECT.md` and the `.claude/` folder into its root.
 2. In your agent's chat, type `/clarify` followed by your idea, e.g.
    `/clarify a habit tracker where I log my daily study hours`
    Answer the questions, then **read the spec** it writes to `specs/`.
@@ -28,8 +28,8 @@ If the slash command doesn't show up, just ask: *"Use the clarify skill for: …
 ## Which tools?
 
 - **GitHub Copilot** (agent mode in VS Code, Copilot CLI) and **Claude Code** both pick up skills from `.claude/skills/`. That's why the kit uses this folder: one copy works in both.
+- **Claude Code tip:** to load `PROJECT.md` in every session, not only in these skills, create a `CLAUDE.md` with one line: `@PROJECT.md`
 - **No agent tool?** Open a `SKILL.md`, paste it into ChatGPT, Claude or any AI chat, and add your idea. Same steps; you save the files yourself.
-- **Claude Code tip:** to load `AGENTS.md` in every session, not only in these skills, create a `CLAUDE.md` with one line: `@AGENTS.md`
 
 ## Why not just chat?
 
